@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 
 public class BallardLoginTest {
 private WebDriver driver;
-private WebDriverWait wait; // هو اللي بيعمل الانتظار
+private WebDriverWait wait; 
 
 @BeforeMethod
 public void setUP() {
@@ -88,7 +88,6 @@ public void ballardLogin() throws InterruptedException {
 	passwordField.sendKeys("ss@Zyadeh@52");
 	signInBtn.click();
 	System.out.println("Clicked Sign In button successfully.");
-	Thread.sleep(5000);
 	
 	// Verify the user is logged in successfully
 	WebElement signOutLink = wait.until(
